@@ -1,0 +1,24 @@
+<div class="container">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo debitis architecto dolore consequatur porro nam assumenda perferendis placeat ab similique nobis, nulla, adipisci praesentium eius. Harum quas ullam cumque veniam, explicabo doloremque qui
+        laborum id quibusdam sapiente, nisi nobis culpa? Quibusdam exercitationem aspernatur id recusandae iusto quae optio cumque dicta!
+    </p>
+    <div class="row">
+        <div class="col-xs=12 ">
+
+            <app-game-control (intervalFired)="onIntervalFired($event)"></app-game-control>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <app-odd *ngFor="let oddNumber of oddNumbers" [number]="oddNumber"></app-odd>
+            <app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even>
+        </div>
+    </div>
+
+</div>
+
+
+<router-outlet> </router-outlet>
